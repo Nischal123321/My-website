@@ -30,7 +30,7 @@
     }
 
     .welcome-text {
-      color: DodgerBlue;
+      color: RoyalBlue;
       font-size: 30px;
       font-weight: bold;
       margin: 10px 20px 10px 20px; /* top margin from header, bottom spacing before iframe */
@@ -41,31 +41,38 @@
       height: 80vh;
       border: none;
     }
-   .icon-button {
+   .know-me-button {
   margin-left: auto;
-  width: 80px;        /* width */
-  height: 40px;       /* height (2:1 ratio) */
-  background-image: icon.jpg;  /* Replace with your image file */
-  background-size: cover;   /* fills entire box */
-  background-position: center;
-  border-radius: 10px;
-  display: inline-block;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  transition: transform 0.2s, box-shadow 0.2s;
+  padding: 10px 20px;
+  background-color: royalblue; /* royal blue background */
+  color: black; /* black text */
+  font-weight: bold;
+  font-size: 14px;
   text-decoration: none;
+  border: none;
+  border-radius: 12px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: background-color 0.3s, transform 0.2s;
 }
 
-.icon-button:hover {
+.know-me-button:hover {
+  background-color: #3a5fcf; /* slightly darker royal blue on hover */
   transform: scale(1.05);
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
 }
+
+
+
   </style>
 </head>
 <body>
 
   <div class="header">
     <img src="nlogo.png" alt="Nischal Adhikari Logo">
-<a href="about.html" class="icon-button"></a>
+<a href="about.html" class="know-me-button">Stalk Me</a>
   </div>
 
   <div class="content">

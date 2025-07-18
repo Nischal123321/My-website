@@ -41,12 +41,37 @@
       height: 80vh;
       border: none;
     }
+    .icon-button {
+  margin-left: auto; /* pushes it to the far right */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;  /* width */
+  height: 40px; /* height → 2:1 ratio */
+  background-color: maroon;
+  border-radius: 10px;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.icon-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.icon-button img {
+  height: 60%;  /* fits within the button */
+}
   </style>
 </head>
 <body>
 
   <div class="header">
     <img src="nlogo.png" alt="Nischal Adhikari Logo">
+<a href="about.html" class="icon-button">
+    <img src="icon.png" alt="About Me Icon">
+  </a>
   </div>
 
   <div class="content">

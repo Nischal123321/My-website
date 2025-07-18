@@ -17,22 +17,22 @@
       align-items: center;
       padding: 5px;
       justify-content: center;
-      gap: 10px; /* space between logo and text */
+      gap: 10px;
     }
 
     .header img {
       height: 120px;
     }
 
-    .header h1 {
-      color: maroon;
-      font-size: 30px;
-      margin: 0;
-    }
-
     .content {
       text-align: center;
-      padding: 0 5px 5px;
+      padding: 10px 5px 5px;
+    }
+
+    .welcome-text {
+      color: maroon;
+      font-size: 30px;
+      margin: 10px 0 20px; /* top margin from header, bottom spacing before iframe */
     }
 
     iframe {
@@ -46,10 +46,13 @@
 
   <div class="header">
     <img src="nlogo.png" alt="Nischal Adhikari Logo">
-    <h1>Welcome! I’m Nischal. These projects? Just me messing around with ideas and seeing what clicks</h1>
   </div>
 
   <div class="content">
+    <div class="welcome-text">
+      Welcome! I’m Nischal. These projects? Just me messing around with ideas and seeing what clicks.
+    </div>
+
     <iframe 
       src="https://app.powerbi.com/reportEmbed?reportId=6b5bd44c-611e-4890-992d-34c5553a800d&autoAuth=true&ctid=389cbb90-c146-4963-ae77-6f81ccc381f7" 
       allowfullscreen="true">
